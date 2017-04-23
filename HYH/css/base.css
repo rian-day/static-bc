@@ -1,0 +1,143 @@
+		*{
+			padding: 0px;
+			border: 0px;
+			margin: 0px;
+		}
+		body{
+			background: #F2F2F3;
+		}
+		span{
+			font-size: 40px;
+			color: #555;
+		}
+		img{
+			width: 100%;
+		}
+		ul ol{
+			list-style: none;
+			text-decoration: none;
+		}
+		li{
+			list-style: none;
+		}
+		.row{
+			text-align: center;
+		}
+		.container-fluid{
+			max-width: 1130px;
+		}
+		#header{
+			width: 100%;
+			background: #fff;
+		}
+		#header .container-fluid{
+			max-width: 100%;
+		}
+		#header .container-fluid .row{
+			text-align: left;
+		}
+		#header .container-fluid .row h1{
+			padding: 30px;
+		}
+		#header .container-fluid .row img{
+			width: 40px;
+		}
+		#header .container-fluid .row #nav-first{
+			padding-top: 50px;
+			text-align: center;
+			height: 150px;
+			background: #eee;
+		}
+		#header .container-fluid .row #nav-second{
+			font-size: 30px;
+			color:#555;
+			padding-top: 50px;
+			text-align: center;
+			height: 150px;
+			background: #ddd;
+		}
+		#header .container-fluid .row #nav-third{
+			padding-top: 50px;
+			text-align: center;
+			height: 150px;
+			background: #ccc;
+		}
+		#title #img img{
+			max-width: 500px;
+		}
+		#container{
+			margin-top: 30px;
+		}
+		#container #title{
+			text-align: left;
+		}
+		#bottom-group{
+			padding-top: 40px;
+		}
+		#daohang img{
+			width: auto;
+			margin: 50px;
+		}
+		#details-box{
+		}
+		#details-box #detials-left{
+			background: MintCream;
+			height: 500px;
+		}
+		#details-box #detials-right{
+			background: #E6E6FA;
+			height: 500px;
+		}
+		#details-box #detials-3{
+			background: #D8BFD8;
+			height: 500px;
+		}
+		#details-box #details-devider{
+			height: 150px;
+			background: #fff;
+		}
+		.footer{
+			padding: 30px;
+			width: 100%;
+			/*background: #2c3e50;*/
+			background: #fff;
+		}
+		.footer #top{
+			padding: 50px;
+			background: #fff;
+			margin: auto;
+			max-width: 1300px;
+			border-style: solid;
+			border-top-width: 2px;
+			border-bottom-width: 2px;
+			border-color: #ccc;
+		}
+		.footer #top #logo{
+			width: 200px;
+		}
+		.footer #top:after{
+			clear: both;
+			content: "";
+			display: block;
+		}
+		.footer #top img{
+			width: 40px;
+		}
+		.footer #top li{
+			list-style: none;
+			float: right;
+			padding-left: 20px;
+		}
+		.footer #top li:first-child{
+			float: left;
+		}
+		.footer #top #title{
+			font-size: 30px;
+			margin-right: 70px;
+		}
+		.footer #ul-group-box{
+			max-width: 1300px;
+		}
+		.footer #ul-group-box .row{
+			text-align: left;
+		}
