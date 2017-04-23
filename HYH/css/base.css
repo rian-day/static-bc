@@ -73,10 +73,17 @@
 			padding-top: 40px;
 		}
 		#daohang img{
-			width: auto;
-			margin: 50px;
+			width: 120px;
+			margin: 30px;
 		}
-		#details-box{
+		#daohang .row{
+			margin-right: 0px;
+		}
+		#daohang #last{
+			margin-right: 0px;
+		}
+		#details-box div{
+			padding: 0px;
 		}
 		#details-box #detials-left{
 			background: MintCream;
