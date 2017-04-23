@@ -36,30 +36,28 @@
 		#header .container-fluid .row{
 			text-align: left;
 		}
+		#header .container-fluid .row div{
+			height: 150px;
+			padding: 60px;
+		}
 		#header .container-fluid .row h1{
-			padding: 30px;
+			margin: 0px;
 		}
 		#header .container-fluid .row img{
 			width: 40px;
 		}
 		#header .container-fluid .row #nav-first{
-			padding-top: 50px;
 			text-align: center;
-			height: 150px;
 			background: #eee;
 		}
 		#header .container-fluid .row #nav-second{
 			font-size: 30px;
 			color:#555;
-			padding-top: 50px;
 			text-align: center;
-			height: 150px;
 			background: #ddd;
 		}
 		#header .container-fluid .row #nav-third{
-			padding-top: 50px;
 			text-align: center;
-			height: 150px;
 			background: #ccc;
 		}
 		#title #img img{
