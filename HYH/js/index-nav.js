@@ -47,6 +47,28 @@ $(document).ready(function() {
 	// });
 
 	//第二个版本
+	var widt=parseFloat($("#header #logo").width())/2.0;   //让logo居中
+	$("#header #logo").css('margin-left','-'+widt+'px');
+
+	$("#header #item2 a").click(function(event) {
+		if($("#header #item2 a").html().toString()=='<img src="img/index/heart-red.png">'){
+			$("#header #item2 a").html('<img src="img/index/heart-filled-red.png">');
+		}else{
+			$("#header #item2 a").html('<img src="img/index/heart-red.png">');
+		}
+	});
+	$("#header #box-left #item1").click(function(event) {
+		$("#header-left").css({
+			'left': '0px',
+			'opacity': '1.0'
+		});
+	});
+	$("#header-left #head #text span").click(function(event) {
+		$("#header-left").css({
+			'left': '-300px',
+			'opacity': '0.7'
+		});
+	});
 	//监视网页大小
 	// window.onresize=function(){
 	// 	alert(document.body.clientWidth);
