@@ -3,6 +3,9 @@
 			border: 0px;
 			margin: 0px;
 		}
+/*		*, *:before, *:after {
+    	box-sizing: inherit;
+		}*/
 		body{
 			background: #F2F2F3;
 		}
@@ -26,6 +29,7 @@
 		.container-fluid{
 			max-width: 1130px;
 		}
+		/*第一个版本*/
 		#header{
 			width: 100%;
 			background: #fff;
@@ -60,6 +64,47 @@
 			text-align: center;
 			background: #ccc;
 		}
+		/*第二个版本*/
+		/*#header{
+			height: 70px;
+			background: #F2F2F3;
+			border-style: solid;
+			border-bottom-width: 1px;
+			border-color: #ccc;
+		}
+		#header #box-left{
+			float: left;
+			width: 115px;
+			padding: 0 23px;
+			border-style: solid;
+			border-right-width: 1px;
+			border-color: #ccc;
+		}
+		#header #box-left span{
+			padding-left: 7px;
+			font-size: 12px;
+		}
+		#header #box-left img{
+			width: 25px;
+			position: relative;
+			top: -3px;
+		}
+		#header #items{
+			height: 70px;
+			line-height: 70px;
+			padding-left: 15px;
+			float: left;
+		}
+		#header #box-right{
+			float: left;
+		}
+		#header #box-right span{
+			padding-left: 7px;
+			font-size: 15px;
+		}*/
+
+		/*-------一条华丽丽的分割线----------*/
+
 		#title #img img{
 			max-width: 500px;
 		}

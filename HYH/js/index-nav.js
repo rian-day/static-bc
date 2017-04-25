@@ -1,18 +1,10 @@
 $(document).ready(function() {
-	// $("#header .container-fluid .row #nav-second a").click(function(event) {
-	// 	if($("#header .container-fluid .row #nav-second a").html().toString()=='<img src="img/index/heart-red.png">'){
-	// 		$("#header .container-fluid .row #nav-second a").html('<img src="img/index/heart-filled-red.png">');
-	// 	}else{
-	// 		$("#header .container-fluid .row #nav-second a").html('<img src="img/index/heart-red.png">');
-	// 	}
-	// });
+	// 第一个版本
 	$("#header .container-fluid .row #nav-second a").click(function(event) {
-		// if($("#header .container-fluid .row #nav-second a span").attr('color');=="red"){
-		// 	$("#header .container-fluid .row #nav-second a span").css('color', 'black');
-		// }
-		alert($("#header .container-fluid .row #nav-second a span").attr('color'));
-		if($("#header .container-fluid .row #nav-second a span").color!="red"){
-			$("#header .container-fluid .row #nav-second a span").css('color', 'red');
+		if($("#header .container-fluid .row #nav-second a").html().toString()=='<img src="img/index/heart-red.png">'){
+			$("#header .container-fluid .row #nav-second a").html('<img src="img/index/heart-filled-red.png">');
+		}else{
+			$("#header .container-fluid .row #nav-second a").html('<img src="img/index/heart-red.png">');
 		}
 	});
 	$(window).scroll(function(event) {
@@ -33,10 +25,6 @@ $(document).ready(function() {
 				'padding-top':'30px'
 			});
 			$("#h1-box").css('padding', '0px');
-			$("#header .container-fluid .row #box-right").css({
-				property1: 'value1',
-				property2: 'value2'
-			});
 		}
 		if (distance<50){
 			$("#header").css({
@@ -57,4 +45,11 @@ $(document).ready(function() {
 		}
 		
 	});
+
+	//第二个版本
+	//监视网页大小
+	// window.onresize=function(){
+	// 	alert(document.body.clientWidth);
+	// }
+	
 });
