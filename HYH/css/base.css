@@ -234,6 +234,14 @@
 			opacity: 0;
 			cursor: pointer;
 		}
+		#mask-main{
+			position: fixed;
+			top: 0px;
+			height: 100vh;
+			background: #ccc;
+			opacity: 0.7;
+			display: none;
+		}
 		/*遮罩层动画*/
 		@keyframes mask-show{
 			0%{

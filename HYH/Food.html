@@ -8,147 +8,176 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/food.css">
+	<script type="text/javascript" src="js/index-nav.js"></script>
 </head>
 <body>
+	<!-- 遮罩层 -->
+	<div id="mask-top"></div>
+	<div id="mask-bottom"></div>
+	<div id="mask-main">
+		
+	</div>
+	<!-- 第二个版本 -->
 	<div id="header">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-6"><h1>HEAD|<small>COUNTRY-SIDE</small></h1></div>
-				<div class="col-xs-2" id="nav-first"><img src="img/index/nav.png"></div>
-				<div class="col-xs-2" id="nav-second">Details<span class="caret"></span></div>
-				<div class="col-xs-2" id="nav-third"><img src="img/index/person.png"></div>
+		<div id="box-left">
+			<div id="item1">
+				<img src="img/index/nav.png"><span>MENU</span>
 			</div>
 		</div>
+		<div id="item1"><span class="glyphicon glyphicon-search"></span></div>
+		<div id="item3">REGISTER/LOG IN</div>
+		<div id="item2"><a href="#"><img src="img/index/heart-red.png"></a>/ do you like our web?</div>
+		<div id="logo">
+			Beautiful CountrySide
+		</div>
 	</div>
-	<div id="lunbo-box">
-		<div class="container-fluid">
-			<div class="row">
-				<div id="lunbo">
-						<div id="myCarousel" class="carousel slide">
-						    <!-- 轮播（Carousel）指标 -->
-						    <ol class="carousel-indicators">
-						        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						        <li data-target="#myCarousel" data-slide-to="1"></li>
-						        <li data-target="#myCarousel" data-slide-to="2"></li>
-						    </ol>   
-						    <!-- 轮播（Carousel）项目 -->
-						    <div class="carousel-inner">
-						        <div class="item active">
-						            <img src="img/img01.jpg" alt="First slide">
-						            <div class="carousel-caption">标题 1</div>
-						        </div>
-						        <div class="item">
-						            <img src="img/img02.jpg" alt="Second slide">
-						            <div class="carousel-caption">标题 2</div>
-						        </div>
-						        <div class="item">
-						            <img src="img/img03.jpg" alt="Third slide">
-						            <div class="carousel-caption">标题 3</div>
-						        </div>
-						    </div>
-						    <!-- 轮播（Carousel）导航 -->
-						    <a class="carousel-control left" href="#myCarousel" 
-						        data-slide="prev">&lsaquo;
-						    </a>
-						    <a class="carousel-control right" href="#myCarousel" 
-						        data-slide="next">&rsaquo;
-						    </a>
+	<!-- 左侧导航条 -->
+	<div id="header-left">
+		<div id="head">
+			<a href="#">ENGLISH</a><span id="text">close <span class="glyphicon glyphicon-remove"></span></span>
+		</div>
+		<div id="items"><a href="index.html">Home</a></div>
+		<div id="items"><a href="Food.html">Food</a> </div>
+		<div id="items"><a href="scene.html">Scenery</a> </div>
+		<div id="items"><a href="Policy.html">Policy</a> </div>
+		<div id="items"><a href="Black-board.html">Blackborad</a> </div>
+		<div id="items">About Us <span class="glyphicon glyphicon-align-right"></span></div>
+		<div id="bottom"><img src="img/index/qr_code.png"></div>
+		<div id="change">Did your eye tired ?<span class="glyphicon glyphicon-off"></span><!-- 此处点击后整个网页变成护眼模式 --></div>
+	</div>
+
+	<!-- __________________一条华丽丽的分隔线__________________-->
+	<div id="body">
+		<div id="lunbo-box">
+			<div class="container-fluid">
+				<div class="row">
+					<div id="lunbo">
+							<div id="myCarousel" class="carousel slide">
+							    <!-- 轮播（Carousel）指标 -->
+							    <ol class="carousel-indicators">
+							        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							        <li data-target="#myCarousel" data-slide-to="1"></li>
+							        <li data-target="#myCarousel" data-slide-to="2"></li>
+							    </ol>   
+							    <!-- 轮播（Carousel）项目 -->
+							    <div class="carousel-inner">
+							        <div class="item active">
+							            <img src="img/img01.jpg" alt="First slide">
+							            <div class="carousel-caption">标题 1</div>
+							        </div>
+							        <div class="item">
+							            <img src="img/img02.jpg" alt="Second slide">
+							            <div class="carousel-caption">标题 2</div>
+							        </div>
+							        <div class="item">
+							            <img src="img/img03.jpg" alt="Third slide">
+							            <div class="carousel-caption">标题 3</div>
+							        </div>
+							    </div>
+							    <!-- 轮播（Carousel）导航 -->
+							    <a class="carousel-control left" href="#myCarousel" 
+							        data-slide="prev">&lsaquo;
+							    </a>
+							    <a class="carousel-control right" href="#myCarousel" 
+							        data-slide="next">&rsaquo;
+							    </a>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6">
+						<div id="items" data-toggle="modal" data-target="#myModal">
+							<h1> Item1<small>项目1</small></h1>
 						</div>
+					</div>
+					<div class="col-md-6">
+						<div id="items" data-toggle="modal" data-target="#myModal2">
+							<h1> Item2<small>项目2</small></h1>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div id="items" data-toggle="modal" data-target="#myModal3">
+							<h1> Item2<small>项目2</small></h1>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div id="items" data-toggle="modal" data-target="#myModal">
+							<h1> Item2<small>项目2</small></h1>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div id="items" data-toggle="modal" data-target="#myModal">
+							<h1> Item2<small>项目2</small></h1>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div id="items" data-toggle="modal" data-target="#myModal">
+							<h1> Item2<small>项目2</small></h1>
+						</div>
+					</div>
+
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+					      </div>
+					      <div class="modal-body">
+					        			1
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					        <button type="button" class="btn btn-primary">Save changes</button>
+					      </div>
+					    </div><!-- modal-content -->
+					  </div><!-- modal-dialog -->
+					</div><!-- modal -->
+
+					<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+					      </div>
+					      <div class="modal-body">
+					        			2
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					        <button type="button" class="btn btn-primary">Save changes</button>
+					      </div>
+					    </div><!-- modal-content -->
+					  </div><!-- modal-dialog -->
+					</div><!-- modal -->
+
+					<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+					      </div>
+					      <div class="modal-body">
+					        			3
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					        <button type="button" class="btn btn-primary">Save changes</button>
+					      </div>
+					    </div><!-- modal-content -->
+					  </div><!-- modal-dialog -->
+					</div><!-- modal -->
+
 				</div>
 			</div>
-		</div>
+		</div><!-- content -->
 	</div>
-	<div id="content">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-6">
-					<div id="items" data-toggle="modal" data-target="#myModal">
-						<h1> Item1<small>项目1</small></h1>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div id="items" data-toggle="modal" data-target="#myModal2">
-						<h1> Item2<small>项目2</small></h1>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div id="items" data-toggle="modal" data-target="#myModal3">
-						<h1> Item2<small>项目2</small></h1>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div id="items" data-toggle="modal" data-target="#myModal">
-						<h1> Item2<small>项目2</small></h1>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div id="items" data-toggle="modal" data-target="#myModal">
-						<h1> Item2<small>项目2</small></h1>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div id="items" data-toggle="modal" data-target="#myModal">
-						<h1> Item2<small>项目2</small></h1>
-					</div>
-				</div>
-
-				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				  <div class="modal-dialog" role="document">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-				      </div>
-				      <div class="modal-body">
-				        			1
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				        <button type="button" class="btn btn-primary">Save changes</button>
-				      </div>
-				    </div><!-- modal-content -->
-				  </div><!-- modal-dialog -->
-				</div><!-- modal -->
-
-				<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				  <div class="modal-dialog" role="document">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-				      </div>
-				      <div class="modal-body">
-				        			2
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				        <button type="button" class="btn btn-primary">Save changes</button>
-				      </div>
-				    </div><!-- modal-content -->
-				  </div><!-- modal-dialog -->
-				</div><!-- modal -->
-
-				<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				  <div class="modal-dialog" role="document">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-				      </div>
-				      <div class="modal-body">
-				        			3
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				        <button type="button" class="btn btn-primary">Save changes</button>
-				      </div>
-				    </div><!-- modal-content -->
-				  </div><!-- modal-dialog -->
-				</div><!-- modal -->
-
-			</div>
-		</div>
-	</div><!-- content -->
 	
 	<div class="footer">
 		<div id="top">
