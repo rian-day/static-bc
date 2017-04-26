@@ -48,7 +48,10 @@ $(document).ready(function() {
 
 	//第二个版本
 	var widt=parseFloat($("#header #logo").width())/2.0;   //让logo居中
-	$("#header #logo").css('margin-left','-'+widt+'px');
+	$("#header #logo").css({
+		'margin-left':'-'+widt+'px',
+		'opacity':'1.0'
+});
 
 	$("#header #item2 a").click(function(event) {
 		if($("#header #item2 a").html().toString()=='<img src="img/index/heart-red.png">'){
@@ -57,16 +60,38 @@ $(document).ready(function() {
 			$("#header #item2 a").html('<img src="img/index/heart-red.png">');
 		}
 	});
+	//弹出header-left 左侧导航
 	$("#header #box-left #item1").click(function(event) {
 		$("#header-left").css({
 			'left': '0px',
 			'opacity': '1.0'
 		});
+		$("#mask-top,#mask-bottom").css({
+			'animation':'mask-show 2s',
+			'height':'50vh',
+			'opacity':'0.7'
+		});
 	});
+	//左侧导航缩进
 	$("#header-left #head #text span").click(function(event) {
 		$("#header-left").css({
 			'left': '-300px',
 			'opacity': '0.7'
+		});
+		$("#mask-top,#mask-bottom").css({
+			'animation':'mask-hidden 2s',
+			'height':'0px'
+		});
+	});
+	//点击遮罩层左侧导航缩进
+	$("#mask-top,#mask-bottom").click(function(event) {
+		$("#header-left").css({
+			'left': '-300px',
+			'opacity': '0.7'
+		});
+		$("#mask-top,#mask-bottom").css({
+			'animation':'mask-hidden 2s',
+			'height':'0px'
 		});
 	});
 	//监视网页大小
