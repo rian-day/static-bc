@@ -1,4 +1,9 @@
 $(document).ready(function() {
+	//屏蔽右击
+	 // $(document).bind("contextmenu",function(e){   
+  //       return false;   
+  //    });   
+
 	//第一个版本
 	// $("#header .container-fluid .row #nav-second a").click(function(event) {
 	// 	if($("#header .container-fluid .row #nav-second a").html().toString()=='<img src="img/index/heart-red.png">'){
