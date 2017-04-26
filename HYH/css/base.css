@@ -123,11 +123,21 @@
 			padding-left: 7px;
 			font-size: 15px;
 		}
-		#header #logo{
+
+/*		#header #logo{
 			transition: 0s;
 			line-height: 70px;
 			font-size: 25px;
 			font-weight: bold;
+			position: absolute;
+			left: 50%;
+			opacity: 0;
+			transition: 1s;
+		}*/
+		#header #logo{
+			transition: 0s;
+			width: 15%;
+			padding-top: 11px;
 			position: absolute;
 			left: 50%;
 			opacity: 0;
