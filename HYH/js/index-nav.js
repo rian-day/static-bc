@@ -84,7 +84,7 @@ $(document).ready(function() {
 			'opacity': '0.7'
 		});
 		$("#mask-top,#mask-bottom").css({
-			'animation':'mask-hidden 2s',
+			'animation':'mask-hidden 3s',
 			'height':'0px'
 		});
 	});
