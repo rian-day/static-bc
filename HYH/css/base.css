@@ -94,7 +94,17 @@
 		#header #box-left #item1{
 			cursor: pointer;
 		}
+		#header span{
+			padding-left: 7px;
+			font-size: 15px;
+		}
 		#header #item1{
+			height: 70px;
+			line-height: 70px;
+			padding-left:15px;
+			float: left;
+		}
+		#header #item4{
 			height: 70px;
 			line-height: 70px;
 			padding-left: 15px;
@@ -118,10 +128,6 @@
 			float: right;
 			color: #fff;
 			font-weight: bold;
-		}
-		#header span{
-			padding-left: 7px;
-			font-size: 15px;
 		}
 		#header #logo{
 			transition: 0s;
@@ -216,7 +222,23 @@
 			line-height: 70px;
 			cursor: pointer;
 		}
-		/*遮罩层*/
+		/*---------------------------手机版----------------------------*/
+		#header #item4-m{
+			height: 70px;
+			line-height: 70px;
+			padding-right:25px;
+			float: right;
+		}
+		#header #item4-m span{
+			font-size: 20px;
+		}
+		#header #item2-m{
+			display: none;
+		}
+		#header #item3-m{
+			display: none;
+		}
+		/*--------------------------遮罩层--------------------------*/
 		#mask-top{
 			position: fixed;
 			top: 0px;
@@ -275,51 +297,7 @@
 			}
 		}
 		/*-------一条华丽丽的分割线----------*/
-		#body{
-			padding-top: 75px;
-		}
-		#title #img img{
-			max-width: 500px;
-		}
-		#container{
-			margin-top: 30px;
-		}
-		#container #title{
-			text-align: left;
-		}
-		#bottom-group{
-			padding-top: 40px;
-		}
-		#daohang img{
-			width: 120px;
-			margin: 30px;
-		}
-		#daohang .row{
-			margin-right: 0px;
-			margin-left: 0px;
-		}
-		#daohang #last{
-			margin-right: 0px;
-		}
-		#details-box div{
-			padding: 0px;
-		}
-		#details-box #detials-left{
-			background: MintCream;
-			height: 500px;
-		}
-		#details-box #detials-right{
-			background: #E6E6FA;
-			height: 500px;
-		}
-		#details-box #detials-3{
-			background: #D8BFD8;
-			height: 500px;
-		}
-		#details-box #details-devider{
-			height: 150px;
-			background: #fff;
-		}
+		
 		.footer{
 			padding: 30px;
 			width: 100%;

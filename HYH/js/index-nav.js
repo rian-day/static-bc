@@ -100,8 +100,23 @@ $(document).ready(function() {
 		});
 	});
 	//监视网页大小
-	// window.onresize=function(){
-	// 	alert(document.body.clientWidth);
-	// }
+	if(document.body.clientWidth<1000){
+			$("#header #item4").attr('id','item4-m');
+			$("#header #item2").attr('id','item2-m');
+			$("#header #item3").attr('id','item3-m');
+	}
+	window.onresize=function(){
+		if(document.body.clientWidth>=1000){
+			$("#header #item4-m").attr('id','item4');
+			$("#header #item2-m").attr('id','item2');
+			$("#header #item3-m").attr('id','item3');
+		}
+		if(document.body.clientWidth<1000){
+			$("#header #item4").attr('id','item4-m');
+			$("#header #item2").attr('id','item2-m');
+			$("#header #item3").attr('id','item3-m');
+		}
+
+	}
 	
 });
