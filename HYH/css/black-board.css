@@ -153,7 +153,7 @@ body{
 }
 .reply-frame .reply-textarea img{
 	width: 1.5rem;
-	vertical-align: top;
+	vertical-align: baseline;
 	margin-right: .4rem;
 }
 /*回复框底部*/
