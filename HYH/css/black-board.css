@@ -149,6 +149,7 @@ body{
 	border-top-right-radius: .3rem;
 	border-top-left-radius: .3rem;
 	line-height: 1.5rem;
+	overflow: auto;
 }
 .reply-frame .reply-textarea img{
 	width: 1.5rem;
