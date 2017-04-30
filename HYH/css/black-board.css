@@ -1,0 +1,170 @@
+html{font-size: 14px;line-height: 14px;}
+body{font: 1rem "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;}
+a{text-decoration: none;color: #000;}
+textarea,input{outline: none;}
+
+/*主面板*/
+body{
+	background-color: #F1F1F1;
+}
+.main{
+	margin-top: 5rem;
+}
+@media (max-width: 768px){
+	.main>.container{
+		padding: 0;
+	}
+}
+.main .main-container{
+	min-height: 100vh;
+	max-width: 1024px;
+	border-radius: .3rem;
+	padding: 1rem;
+	background-color: #FFF;
+	box-shadow: .2rem .2rem .5rem #E1E1E1;
+}
+/*楼层*/
+.main-container .floor-content{}
+.floor{
+	border-bottom: 2px solid #F1F1F1;
+	padding-bottom: 1rem;
+}
+/*留言*/
+.floor-container{}
+/*留言头部*/
+.floor-head{}
+.floor-head .head-sculpture{
+	width: 3rem;
+	height: 3rem;
+	border-radius: .5rem;
+	margin: 1rem 1rem;
+}
+.floor-head .name{}
+.floor-head small{
+	color: #C7C7C7;
+	margin-left: 1rem;
+}
+/*留言内容*/
+.floor-body{
+	margin-left: 5rem;
+	min-height: 10rem;
+}
+.floor-body p{
+	font-size: 1.2rem;
+}
+/*留言尾部*/
+.floor-foot{
+	text-align: right;
+	margin-bottom: .3rem;
+}
+.floor-foot p{
+	font-size: .8rem;
+	color: #999;
+}
+.btn-zan,.btn-comment{
+	font-size: 1.5rem;
+	color: #525252;
+	text-decoration: none;
+	padding: .3rem .8rem .2rem .8rem;
+	border-radius: .3rem;
+	border: .1rem solid #FFF;
+	background-color: #F1F1F1;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.btn-zan:hover,.btn-comment:hover{
+	background-color: #8CF2ED;
+	text-decoration: none;
+}
+.btn-zan:focus,.btn-comment:focus{
+	background-color: #8CF2ED;
+	text-decoration: none;
+}
+.btn-zan img,.btn-comment img{
+	height: 1.2rem;
+	text-decoration: none;
+	vertical-align: baseline;
+}
+.btn-zan span,.btn-comment span{
+	font-size: 1rem;
+	margin-left: .5rem;
+}
+
+/*回复层*/
+.reply-container{
+	margin: 0 auto;
+	padding: 0 1rem;
+	border: 1px solid #D8D8D8;
+	border-radius: .2rem;
+	display: none;
+}
+/*回复*/
+.reply{
+	border-top: 1px solid #F1F1F1;
+}
+/*回复头部*/
+.reply-head{}
+.reply-head .head-sculpture{
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: .3rem;
+	margin: .5rem .5rem;
+}
+/*回复内容*/
+.reply-body{
+	margin-left: 3.5rem;
+}
+/*回复底部*/
+.reply-foot{
+	text-align: right;
+}
+.reply-foot p{
+	color: #999;
+}
+/*回复框*/
+.reply-frame{
+	border: 1px solid #A9A9A9;
+	background-color: #F1F1F1;
+	border-radius: .3rem;
+	margin-bottom: 1rem;
+}
+.reply-frame-head img{
+	margin: .2rem .5rem;
+	height: 1.5rem;
+	cursor: pointer;
+}
+.reply-frame textarea{
+	width: 100%;
+	height: 6rem;
+	padding: .5rem 1rem;
+	resize: none;
+}
+.reply-frame-foot{
+	text-align: right;
+	padding: .2rem 1rem;
+}
+.reply-frame-foot a{
+	height: 2rem;
+	line-height: 2rem;
+	padding: 0 1rem;
+}
+.reply-frame-foot img{
+	cursor: pointer;
+}
+img.expression{
+	width: 2rem;
+	margin-right: 1rem;
+	border-radius: 1rem;
+	background-color: #FFF;
+}
+.reply-frame-foot a:hover,.reply-frame-foot img:hover{
+	background-color: #8CF2ED;
+}
+/*分页*/
+.pagination-nav{
+	text-align: center;
+}
