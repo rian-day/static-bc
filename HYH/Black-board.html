@@ -1,249 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
+	<title>留言板</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/base.css">
-	<title></title>
-	<style type="text/css">
-		*{
-			padding: 0px;
-			margin: 0px;
-		}
-		.row{
-			text-align: left;
-		}
-		.top{
-			font-size: 100px;
-			width: 100%;
-			height: 300px;
-		}
-		.bottom{
-			font-size: 100px;
-			width: 100%;
-			height: 400px;
-		}
-		.body1{
-			padding: 20px;
-			width: 80%;
-			margin: auto;
-			background: #eee;
-		}
-		#body span{
-			font-size: 20px;
-		}
-		.goods{
-			margin: 20px;
-			padding: 20px;
-			height: 200px;
-			border-style: solid;
-			border-width: 0px 0px 2px 0px;
-          	border-color: #ccc;
-		}
-		.xiala{
-			float: right;
-		}
-		.content{
-			height: 140px;
-		}
-		#btn{
-			margin-left:90%;
-		}
-		#span1{
-			margin-right: 20px;
-		}
-	</style>
+	<!-- my css -->
+	<link rel="stylesheet" type="text/css" href="css/black-board.css">
 </head>
 <body>
-	<!-- 遮罩层 -->
-	<div id="mask-top"></div>
-	<div id="mask-bottom"></div>
-	<div id="mask-main">
-		
-	</div>
-	<!-- 第一个版本 -->
-	<!-- <div id="header">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-6" id="h1-box"><h1>HEAD|<small>COUNTRY-SIDE</small></h1></div>
-					<div class="col-xs-2" id="nav-first"><img src="img/index/nav.png"></div>
-					<div class="col-xs-2" id="nav-second">
-					<a href="#"><img src="img/index/heart-red.png"></a>
-					</div>
-					<div class="col-xs-2" id="nav-third"><img src="img/index/person.png"></div>
-			</div>
-		</div>
-	</div> -->
-	<!-- 第二个版本 -->
-	<div id="header">
-		<div id="box-left">
-			<div id="item1">
-				<img src="img/index/nav.png"><span>MENU</span>
-			</div>
-		</div>
-		<div id="item1"><span class="glyphicon glyphicon-search"></span></div>
-		<div id="item3">REGISTER/LOG IN</div>
-		<div id="item2"><a href="#"><img src="img/index/heart-red.png"></a>/ do you like our web?</div>
-		<div id="logo">
-			Beautiful CountrySide
-		</div>
-	</div>
-	<!-- 左侧导航条 -->
-	<div id="header-left">
-		<div id="head">
-			<a href="#">ENGLISH</a><span id="text">close <span class="glyphicon glyphicon-remove"></span></span>
-		</div>
-		<div id="items"><a href="index.html">Home</a></div>
-		<div id="items"><a href="Food.html">Food</a> </div>
-		<div id="items"><a href="scene.html">Scenery</a> </div>
-		<div id="items"><a href="Policy.html">Policy</a> </div>
-		<div id="items"><a href="Black-board.html">Blackborad</a> </div>
-		<div id="items">About Us <span class="glyphicon glyphicon-align-right"></span></div>
-		<div id="bottom"><img src="img/index/qr_code.png"></div>
-		<div id="change">Did your eye tired ?<span class="glyphicon glyphicon-off"></span><!-- 此处点击后整个网页变成护眼模式 --></div>
-	</div>
-
-	<!-- __________________一条华丽丽的分隔线__________________-->
-	<div id="body">
-		<div class="container-fuild body1">
-		<div class="goods">
-			<div class="row">
-				<div class="col-xs-2">
-					<div class="user_info">user_info</div>
-				</div>
-				<div class="col-xs-9">
-						<div class="content row">content</div>
+	<!-- 主面板 -->
+	<div class="main">
+		<div class="container">
+			<div class="main-container">
+				<div class="floor-content">
+					<!-- 楼层 -->
+					<div class="floor">
 						<div class="row">
-						<span class="glyphicon glyphicon-time" id="span1"></span> 
-						<span class="glyphicon glyphicon-heart-empty" id="span1"></span>
-						<a href="#">回复</a>
-						</div>
-				</div>
-				<div class="col-xs-1">
-					<div class="xiala">
-							<div class="dropdown">
-						  	<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						    <span class="glyphicon glyphicon-chevron-down"></span>
-						  	</button>
-						  	<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-							   <li><a href="#">删除</a></li>
-							   <li role="separator" class="divider"></li>
-							   <li><a href="#">举报</a></li>
-						  	</ul>
+							<div class="col-xs-12">
+								<!-- 留言 -->
+								<div class="floor-container">
+									<!-- 留言头部 -->
+									<div class="floor-head">
+										<img class="head-sculpture" src="images/1.jpg">
+										<span class="name">张三</span>
+										<small>221楼</small>
+									</div>
+									<!-- 留言内容 -->
+									<div class="floor-body">
+										<p>它的父元素是视窗（浏览器默认用来展示内容的区域的尺寸，不是html 或body 的尺寸）。</p>
+									</div>
+									<!-- 留言尾部 -->
+									<div class="floor-foot">
+										<p>2017年4月19日14:54:50</p>
+										<a class="btn-zan"><img src="images/zan.png"><span class="zan-count">2</span></a>
+										<a class="btn-comment"><img src="images/comment.png"><span class="reply-count">2</span></a>
+									</div>
+									<!-- 回复层 -->
+									<div class="reply-container">
+										<!-- 回复 -->
+										<div class="reply">
+											<!-- 回复头部 -->
+											<div class="reply-head">
+												<img class="head-sculpture" src="images/1.jpg">
+												<span class="name">李四</span>
+											</div>
+											<!-- 回复内容 -->
+											<div class="reply-body">
+												<p>它的父元素是视窗（浏览器默认用来展示内容的区域的尺寸，不是html 或body 的尺寸）。</p>
+											</div>
+											<!-- 回复尾部 -->
+											<div class="reply-foot">
+												<p>2017年4月19日14:54:50</p>
+											</div>
+										</div>
+										<!-- 回复框 -->
+										<div class="reply-frame">
+											<div class="reply-frame-head">
+												<img src="images/report.png">
+											</div>
+											<!-- 回复文本域 -->
+											<textarea class="reply-textarea"></textarea>
+											<div class="reply-frame-foot">
+												<img class="expression" src="images/expression.png">
+												<a class="btn btn-default">回复</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-
-		<div class="goods">
-			<div class="row">
-				<div class="col-xs-2">
-					<div class="user_info">user_info</div>
-				</div>
-				<div class="col-xs-9">
-						<div class="content row">content</div>
-						<div class="row">
-						<span class="glyphicon glyphicon-time" id="span1"></span> 
-						<span class="glyphicon glyphicon-heart-empty" id="span1"></span>
-						<a href="#">回复</a>
-						</div>
-				</div>
-				<div class="col-xs-1">
-					<div class="xiala">
-							<div class="dropdown">
-						  	<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						    <span class="glyphicon glyphicon-chevron-down"></span>
-						  	</button>
-						  	<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-							   <li><a href="#">删除</a></li>
-							   <li role="separator" class="divider"></li>
-							   <li><a href="#">举报</a></li>
-						  	</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<nav aria-label="...">
-		  <ul class="pager">
-		    <li><a href="#">Previous</a></li>
-		    <li><a href="#">Next</a></li>
-		  </ul>
-		</nav>
-
-		<button class="btn btn-default" id="btn">批量管理</button>
-
-		<div class="in">父文本框</div>
-		<button class="btn btn-default">提交</button>
-	</div>
-	</div>
-	<div class="footer">
-		<div id="top">
-			<ul>
-				<li><a href="#"><img src="img/logo.png" id="logo"></a></li>
-				<li><a href="#"><img src="img/p.png"></a></li>
-				<li><a href="#"><img src="img/F.png"></a></li>
-				<li><a href="#"><img src="img/brid.png"></a></li>
-				<li><a href="#"><img src="img/video.png"></a></li>
-				<li><a href="#"><img src="img/camera.png"></a></li>
-				<li id="title">FOLLOW US</li>
-			</ul>
-		</div>
-		<div id="ul-group-box" class="container-fluid">
-			<div class="row">
-				<div class="col-xs-3">
-					<ul>
-						<caption><h2><small>SOUTHERN FOOD</small></h2></caption>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
-						<li>5</li>
-						<li>6</li>
-					</ul>
-				</div>
-				<div class="col-xs-3">
-					<ul>
-						<caption><h2><small>SOUTHERN FOOD</small></h2></caption>
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
-						<li>5</li>
-						<li>6</li>
-					</ul>
-				</div>
-				<div class="col-xs-3">
-					<ul>
-						<caption><h2><small>SOUTHERN FOOD</small></h2></caption>
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
-						<li>5</li>
-						<li>6</li>
-					</ul>
-				</div>
-				<div class="col-xs-3">
-					<ul>
-						<caption><h2><small>SOUTHERN FOOD</small></h2></caption>
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
-						<li>5</li>
-						<li>6</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				SouthernLiving.com is part of the Time Inc. Food Collection and the Time Inc. Lifestyle Network. ©2016 Time Inc. Lifestyle Group. Rights Reserved. Look for a Job at Time Inc. Use of this site constitutes acceptance of our Terms of Use and Privacy Policy ( Your California Privacy Rights ). Ad Choices. All products and services featured are selected by our editors. Southern Living may receive compensation for some links to products and services on this website.
+				<nav class="pagination-nav">
+				  <ul class="pagination">
+				    <li>
+				      <a href="#" >
+				        <span >&laquo;</span>
+				      </a>
+				    </li>
+				    <li class="active"><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+				    <li>
+				      <a href="#">
+				        <span>&raquo;</span>
+				      </a>
+				    </li>
+				  </ul>
+				</nav>
 			</div>
 		</div>
 	</div>
+	<!-- 导入js -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/blackboard.js"></script>
 </body>
 </html>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/index-nav.js"></script>
