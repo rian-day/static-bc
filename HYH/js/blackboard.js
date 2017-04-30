@@ -30,4 +30,26 @@ $(document).ready(function() {
 		}
 	})
 
+	var timer;
+	$('img.expression,.expression-panel').bind({
+		'mouseenter':function(){
+			clearTimeout(timer)
+			$(this).parent('.reply-frame-foot').find('.expression-panel').show();
+		},
+		'mouseleave':function(){
+			clearTimeout(timer)
+			var exprP_obj = $(this).parent('.reply-frame-foot').find('.expression-panel');
+			timer = setTimeout(function(){
+				exprP_obj.hide();
+			},100)
+		},
+	})
+	$('.main').click(function(){
+	})
+	$('.expression-panel img').click(function(){
+		var ta_obj = $(this).parents('.reply-frame').find('.reply-textarea');
+		var expr_src = $(this).attr('src');
+		ta_obj.html(ta_obj.html()+"<img src='"+expr_src+"'>")
+	})
+
 })
