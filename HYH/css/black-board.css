@@ -9,7 +9,7 @@ body{
 	background-color: #F1F1F1;
 }
 .main{
-	margin-top: 5rem;
+	padding-top: 80px;
 }
 @media (max-width: 768px){
 	.main>.container{
