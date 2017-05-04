@@ -70,7 +70,7 @@ body{
 #content #item-box #box-left{
 	float: left;
 	height: 350px;
-	width: 550px;
+	width: 50%;
 	overflow: hidden;
 	background-image: url("../img/bg3.jpg");
 	background-size: cover;
@@ -94,7 +94,7 @@ body{
 #content #item-box #box-right{
 	float: left;
 	height: 350px;
-	width: 550px;
+	width: 50%;
 	background: #fff;
 }
 #content #item-box #box-right #hr{
