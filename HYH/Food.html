@@ -45,18 +45,20 @@
 
 	<!-- __________________一条华丽丽的分隔线__________________-->
 	<div id="body">
-		<div id="lunbo-box">
+		<div id="top-back"></div>
+		<div id="top">Food</div>
+		<!-- <div id="lunbo-box">
 			<div class="container-fluid">
 				<div class="row">
 					<div id="lunbo">
 							<div id="myCarousel" class="carousel slide">
-							    <!-- 轮播（Carousel）指标 -->
+							    轮播（Carousel）指标
 							    <ol class="carousel-indicators">
 							        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 							        <li data-target="#myCarousel" data-slide-to="1"></li>
 							        <li data-target="#myCarousel" data-slide-to="2"></li>
 							    </ol>   
-							    <!-- 轮播（Carousel）项目 -->
+							    轮播（Carousel）项目
 							    <div class="carousel-inner">
 							        <div class="item active">
 							            <img src="img/img01.jpg" alt="First slide">
@@ -71,7 +73,7 @@
 							            <div class="carousel-caption">标题 3</div>
 							        </div>
 							    </div>
-							    <!-- 轮播（Carousel）导航 -->
+							    轮播（Carousel）导航
 							    <a class="carousel-control left" href="#myCarousel" 
 							        data-slide="prev">&lsaquo;
 							    </a>
@@ -82,9 +84,35 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div id="content">
-			<div class="container-fluid">
+			<div id="box-caption">
+				<h1>Food & Wine<br>
+				<small>We are a very privileged property to be in such a food-centric locale</small></h1>
+				<p>We grow many of our own fruits, vegetables and forage the estate for various wild produce. Wharekauhau is also in the unique position of being linked with one of the fastest growing vineyard companies in New Zealand – Foley Family Wines – which provides us access to a fabulous library of fantastic wines. Additionally, being 30 minutes by road from what many describe as the premier Pinot Noir region of New Zealand means we are quite literally PERFECTLY situated for those looking for food & wine experiences.</p>
+			</div>
+			<div id="item-box">
+				<div id="box-left">
+					<!-- <img src="img/bg3.jpg"> -->
+				</div>
+				<div id="box-right">
+					<div id="hr"></div>
+					<div id="text">
+						<h3>Food1</h3>
+						<p>many of our own fruits, vegetables and forage the estate for various wild produce. Wharekauhau is also in the unique position</p>
+						<div id="button" data-toggle="modal" data-target="#myModal">
+							<div id="line-right"></div>
+							<div id="line-top"></div>
+							<div id="line-left"></div>
+							<div id="line-bottom"></div>
+							DISCOVER
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- <div class="container-fluid">
 				<div class="row">
 					<div class="col-md-6">
 						<div id="items" data-toggle="modal" data-target="#myModal">
@@ -96,26 +124,29 @@
 							<h1> Item2<small>项目2</small></h1>
 						</div>
 					</div>
-					<div class="col-md-6">
-						<div id="items" data-toggle="modal" data-target="#myModal3">
-							<h1> Item2<small>项目2</small></h1>
+				</div>
+			</div> -->
+
+
+			<div id="item-box">
+				<div id="box-right">
+					<div id="text">
+						<h3>Food1</h3>
+						<p>many of our own fruits, vegetables and forage the estate for various wild produce. Wharekauhau is also in the unique position</p>
+						<div id="button" data-toggle="modal" data-target="#myModal2">
+							<div id="line-top"></div>
+							<div id="line-left"></div>
+							<div id="line-right"></div>
+							<div id="line-bottom"></div>
+							DISCOVER
 						</div>
 					</div>
-					<div class="col-md-6">
-						<div id="items" data-toggle="modal" data-target="#myModal">
-							<h1> Item2<small>项目2</small></h1>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div id="items" data-toggle="modal" data-target="#myModal">
-							<h1> Item2<small>项目2</small></h1>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div id="items" data-toggle="modal" data-target="#myModal">
-							<h1> Item2<small>项目2</small></h1>
-						</div>
-					</div>
+					<div id="hr"></div>
+				</div>
+				<div id="box-left">
+				</div>
+			</div>
+			
 
 					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 					  <div class="modal-dialog" role="document">
@@ -153,26 +184,7 @@
 					  </div><!-- modal-dialog -->
 					</div><!-- modal -->
 
-					<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-					  <div class="modal-dialog" role="document">
-					    <div class="modal-content">
-					      <div class="modal-header">
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-					      </div>
-					      <div class="modal-body">
-					        			3
-					      </div>
-					      <div class="modal-footer">
-					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					        <button type="button" class="btn btn-primary">Save changes</button>
-					      </div>
-					    </div><!-- modal-content -->
-					  </div><!-- modal-dialog -->
-					</div><!-- modal -->
 
-				</div>
-			</div>
 		</div><!-- content -->
 	</div>
 	
@@ -244,3 +256,4 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/index-nav.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/button.js"></script>
