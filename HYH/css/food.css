@@ -114,14 +114,49 @@ body{
 }
 #content #item-box #box-right #text #button{
 	height: 50px;
-	width: 100px;
+	width: 70px;
 	text-align: center;
 	line-height: 50px;
-	border-style: solid;
+	/*border-style: solid;
 	border-top-width: 1px;
-	border-color: #ccc;
+	border-color: #ccc;*/
 	cursor: pointer;
+	position: relative;
+	transition: 0.7s;
 }
-#content #item-box #box-right #text #button:hover{
+/*#content #item-box #box-right #text #button:hover{
 	border-width: 1px;
+}*/
+#content #item-box #box-right #text #button *{
+	transition: 0.7s;
+	border-color: #ccc;
+}
+#content #item-box #box-right #text #button #line-top{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 50px;
+	border-style: solid;
+	border-width: 1px;
+}
+#content #item-box #box-right #text #button #line-left{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 0px;
+	border-style: solid;
+}
+#content #item-box #box-right #text #button #line-right{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 0px;
+	border-style: solid;
+}
+#content #item-box #box-right #text #button #line-bottom{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 0px;
+	border-style: solid;
 }
