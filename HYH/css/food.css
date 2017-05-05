@@ -72,11 +72,16 @@ body{
 	height: 350px;
 	width: 50%;
 	overflow: hidden;
+	cursor: pointer;
+}
+#content #item-box #box-left #img{
 	background-image: url("../img/bg3.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
-	cursor: pointer;
+	background-position: center;
+	height: 350px;
+	width: 550px;
+	transition: 1s;
 }
 /*#content #item-box #box-left img{
 	cursor: pointer;
