@@ -1,0 +1,47 @@
+body{
+	background: #fafafa;
+}
+#content{
+	width: 300px;
+	margin: auto;
+	margin-top: 80px;
+}
+#content #logo{
+	width: 100%;
+	text-align: center;
+}
+#content #logo p{
+	font-size: 20px;
+}
+#content #logo img{
+	width: 35%;
+}
+#content #view{
+	padding: 25px;
+	border-style: solid;
+	border-color: #ccc;
+	border-radius: 10px;
+	border-width: 1px;
+	background: #fff;
+}
+#content #view input{
+	width: 250px;
+}
+#content #view2{
+	text-align: center;
+	height: 50px;
+	width: 100%;
+	line-height: 50px;
+	font-size: 20px;
+	border-style: solid;
+	border-color: #ccc;
+	border-radius: 10px;
+	border-width: 1px;
+	background: #fff;
+	margin-top: 20px;
+	background: #fafafa;
+	cursor: pointer;
+}
+#content #view2:hover{
+	background: #ccc;
+}
